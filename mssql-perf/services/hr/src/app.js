@@ -31,10 +31,10 @@ async function checkDatabaseConnection(pool) {
 
 async function startHrPortalApp() {
     const pool = new sql.ConnectionPool({
-        server: '20.235.136.68',
+        server: '136.68',
         user: 'sa',
-        password: 'DevPassword@1234',
-        database: 'AdventureWorks2022',
+        password: '1234',
+        database: 'AdventureWorks',
         pool: {
             max: 100, // Adjust based on your needs and server capacity
             min: 0,
@@ -436,6 +436,3 @@ startHrPortalApp().catch(err => {
     console.error(new Date().toISOString(), 'Failed to start application:', err.message);
     process.exit(1);
 });
-
-//e7b940c1721734ea579a3ba1ec58ecf0FFFFNRAL
-//739cc4d2cbdca96be716b5797940f39eFFFFNRAL
